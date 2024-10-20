@@ -1,9 +1,8 @@
-package HomePageTest;
+package UITest;
 
 import Utils.BaseTest;
 import modules.HomePage;
 import org.testng.Assert;
-import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
