@@ -1,0 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/encodings.xml
+/Automation.iml
+/jarRepositories.xml
+/uiDesigner.xml
+/modules.xml
+/misc.xml
+/vcs.xml
+/compiler.xml
+/*.class
