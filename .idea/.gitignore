@@ -1,11 +1,31 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-/encodings.xml
-/Automation.iml
-/jarRepositories.xml
-/uiDesigner.xml
-/modules.xml
-/misc.xml
-/vcs.xml
-/*.class
+# Maven specific files
+/target/
+*.log
+
+# IDE specific files
+*.idea/
+*.iml
+*.classpath
+*.project
+*.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# IntelliJ specific files
+*.iml
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build files
+*.class
+*.jar
+*.war
+*.ear
