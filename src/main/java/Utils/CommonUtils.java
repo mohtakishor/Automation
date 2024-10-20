@@ -24,9 +24,29 @@ public class CommonUtils {
         element.click();
     }
 
+    public void clear(WebElement element) {
+        element.clear();
+    }
+    public String getText(WebElement element){
+        return element.getText();
+    }
+
     public WebElement explicitWait(WebDriver driver, WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(30));
         WebElement elementFound = wait.until(ExpectedConditions.visibilityOf(element));
         return elementFound;
+    }
+
+    public void waitForElement(WebElement element, WebDriver driver) {
+        try {
+            WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofMillis(40));
+            webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
+        } catch (Exception e) {
+           e.printStackTrace();
+        }
+    }
+
+    public boolean isElementDisplayed(WebElement element) {
+        return element.isDisplayed();
     }
 }
