@@ -9,11 +9,6 @@ public class Log {
     // This is to print log for the beginning of the test case, as we usually
     // run so many test cases as a test suite
 
-    public static void openPage(String pageName) {
-        log.info(" :::::::::::::::    " + pageName + "    :::::::::::::::");
-        System.out.println(" :::::::::::::::    " + pageName + "    :::::::::::::::");
-    }
-
     public static void info(String message) {
         log.info(message);
         System.out.println(message);

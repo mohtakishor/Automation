@@ -27,8 +27,11 @@ public class CommonUtils {
     public void clear(WebElement element) {
         element.clear();
     }
-    public String getText(WebElement element){
-        return element.getText();
+
+    public String getText(WebElement element) {
+        String text = element.getText();
+        Log.info("Fetched Text is : " + text);
+        return text;
     }
 
     public WebElement explicitWait(WebDriver driver, WebElement element) {
@@ -42,7 +45,7 @@ public class CommonUtils {
             WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofMillis(40));
             webDriverWait.until(ExpectedConditions.elementToBeClickable(element));
         } catch (Exception e) {
-           e.printStackTrace();
+            e.printStackTrace();
         }
     }
 

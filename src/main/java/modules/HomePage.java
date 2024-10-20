@@ -1,6 +1,7 @@
 package modules;
 
 import Utils.CommonUtils;
+import Utils.Log;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,7 +60,8 @@ public class HomePage extends CommonUtils {
     public String getTextForFailureMessage() {
         return getText(failureMessage);
     }
-    public String getTextForSuccessSearchResult(){
+
+    public String getTextForSuccessSearchResult() {
         return getText(searchResultMessage);
     }
 }
