@@ -5,6 +5,9 @@ Page Object Model (POM):
 Each page of the application is represented by a separate class. This encapsulates the elements and methods related to that page, allowing for easier updates and reuse across tests.
 Page Factory:
 Utilizes Selenium's Page Factory to initialize web elements in a more efficient manner. This allows for lazy loading of elements, which can improve performance and reduce memory usage.
+
+
+
 Tech Stack Used :- 
 Java – Programming language
 Selenium WebDriver – For UI automation
@@ -12,6 +15,8 @@ TestNG – Test management and execution framework
 Maven – Dependency management and build tool
 Rest-Assured – For API testing
 Extent Reports – For reporting
+
+
 
 Structure :-
 
